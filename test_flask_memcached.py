@@ -17,6 +17,6 @@ def test_simple():
 
     with app.app_context():
         memcached.client.set(b'foo', b'bar')
-        assert memcache.client.get(b'foo') == b'bar'
+        assert memcached.client.get(b'foo') == b'bar'
 
     assert mc.get(b'pxfoo') == b'bar'
